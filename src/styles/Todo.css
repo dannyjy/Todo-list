@@ -1,154 +1,120 @@
 * {
-  padding: 0;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
   font-family: sans-serif;
 }
+
 body {
   height: 100vh;
   display: flex;
   align-items: center;
+  background: #e3e3e3;
   justify-content: center;
 }
 
 .todo-app {
-  display: grid;
-  width: 400px;
-  padding: 40px;
-  margin-top: 1rem;
+  display: flex;
+  width: 450px;
+  padding-bottom: 2.5rem;
   border-radius: 10px;
   justify-content: center;
-  background: rgba(207, 23, 155, 0.765);
+  box-shadow: 2rem 2rem 5rem #bbbaba;
 }
 
 h1 {
-  color: white;
-  margin-bottom: 20px;
-  border-radius: 2rem;
+  color: #5c5757;
+  margin: 2.5rem 0rem 1rem 0rem;
+}
+p{
+  color: #1b1b1b;
 }
 
 .input-section {
+  gap: .5rem;
   display: flex;
-  justify-content: space-between;
   margin-bottom: 15px;
+  justify-content: space-between;
 }
 
-.inpt {
-  padding: 10px;
-  border: 1px solid rgba(207, 23, 155, 0.765);
-  border-radius: 5rem;
-  outline: none;
-  width: 80%;
-  font-size: 1em;
-}
-
-#add-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.2rem;
-  background-color: white;
-  color: rgba(207, 23, 155, 0.765);
+.input-section .inpt {
+  width: 300px;
   border: none;
+  outline: none;
   padding: 10px;
+  font-size: 1em;
   border-radius: 5px;
+}
+
+.input-section #add-btn {
+  border: none;
   cursor: pointer;
-  margin-left: 5px;
+  color: #000099;
+  border-radius: 5px;
+  padding: .8rem 1.2rem;
+  background-color: white;
 }
 
 .tasks-buttons {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
   margin-bottom: 20px;
-}
-
-.tasks-buttons button {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  font-size: 14px;
-  padding: 10px 15px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  background-color: white;
-  color: #d210d2;
-  margin: 0 7px;
-  transition: background-color 0.3s, color 0.3s;
-}
-
-.task-item {
-  display: flex;
-  align-items: center;
-  margin: 10px 0;
-  font-size: 16px;
-  color: #333;
-  background-color: rgba(207, 23, 155, 0.765);
-}
-
-.task-item input[type="checkbox"] {
-  margin-right: 10px;
-  cursor: pointer;
-}
-
-ul#task-list {
-  list-style-type: none;
-  padding: 0;
-  margin: 20px auto;
-  max-width: 400px;
-  text-align: left;
-}
-
-#clearbtn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  width: 100%;
-  padding: 10px;
-  background: #ffffff;
-  color: rgb(118, 8, 121);
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  margin-top: 10px;
-}
-
-ul#task-list {
-  list-style-type: none;
-  padding: 0;
-  margin: 2px auto;
-  width: 300px;
-  text-align: left;
-}
-
-.task-item {
-  display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-  background-color: #f1f1f1;
+}
+
+.tasks-buttons :link {
+  border: none;
+  cursor: pointer;
+  font-size: .9rem;
   border-radius: 5px;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  align-items: center;
+  text-decoration: none;
+  padding: .8rem 2.5rem;
   background-color: white;
 }
 
 .task-content {
   display: flex;
+  padding: 10px;
+  border-radius: 5px;
   align-items: center;
+  margin-bottom: .5rem;
+  background-color: #f1f1f1;
+  justify-content: space-between;
+  box-shadow: 0px 2px 4px #0000001a;
+}
+.task-content .task-input{
+  gap: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.task-content input[type="checkbox"] {
-  margin-right: 10px;
-  cursor: pointer;
-}
-
-.delete-btn {
-  background: none;
+.task-content .delete-btn {
   border: none;
-  color: rgba(207, 23, 155, 0.765);
   cursor: pointer;
-  font-size: 20px;
-  transition: color 0.3s;
+  background: none;
+  font-size: 1.5rem;
+  color: #000099;
+}
+
+#clearbtn {
+  border: none;
+  display: flex;
+  width: 100%;
+  padding: 10px;
+  cursor: pointer;
+  color: #000099;
+  margin-top: 10px;
+  border-radius: 5px;
+  align-items: center;
+  background: #ffffff;
+  justify-content: center;
+}
+
+.btnsContainer .btns{
+  border: none;
+  padding: .5rem;
+  font-size: .9rem;
+  cursor: pointer;
+  color: #000099;
 }
